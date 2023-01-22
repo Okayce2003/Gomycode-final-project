@@ -1,0 +1,214 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 85vw;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: rgb(202, 231, 202);
+    /* background: url("https://i0.wp.com/thefisayo.com/wp-content/uploads/2019/12/la-campagne-tropicana-the-fisayo.jpg?fit=1920%2C1239&ssl=1"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#header {
+    background-color: rgb(140, 201, 140);
+    margin: 10px auto 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: forestgreen;
+    border-radius: 10px;
+}
+
+.logo-hamburger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 450px; */
+}
+
+#socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#socialmedia {
+    display: flex;
+    gap: 15px;
+    color: blue;
+    font-size: 150%;
+}
+
+i,
+.navdropdown {
+    cursor: pointer;
+}
+
+#instagram {
+    color: rgb(187, 72, 72);
+}
+
+.navbar {
+    background-color: rgb(140, 201, 140);
+    border-radius: 10px;
+    font-size: 20px;
+    position: sticky;
+}
+
+.navbar-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-link1 {
+    display: none;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li a {
+    text-decoration: none;
+    color: blue;
+    display: block;
+    padding: 1rem;
+}
+
+li :hover {
+    background-color: skyblue;
+}
+
+.toggle-button {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    right: 1rem;
+    top: 0.75rem;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: forestgreen;
+    border-radius: 10px;
+}
+
+.fa-sharp {
+    color: rgb(129, 102, 226);
+}
+
+.sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navdropdown {
+    border-color: transparent;
+    background-color: rgb(140, 201, 140);
+    font-size: 20px;
+    color: blue;
+    width: auto;
+}
+
+@media (max-width: 800px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    .navbar-link {
+        display: none;
+    }
+    #name {
+        font-size: 14px;
+    }
+    .toggle-button {
+        display: flex;
+        color: blue;
+        position: relative;
+        align-items: flex-end;
+    }
+    .logo-hamburger {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 400px;
+    }
+    .navbar-link1 {
+        flex-direction: column;
+        gap: 0.8px;
+        text-align: right;
+        align-items: flex-end;
+        align-self: end;
+    }
+    .navbar-link1 li a,
+    .navdropdown {
+        align-items: flex-end;
+        gap: 1px;
+        font-size: 12px;
+    }
+    .navbar-link1.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 700px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .navbar-link {
+        display: none;
+    }
+    .toggle-button {
+        display: flex;
+        color: blue;
+    }
+    .logo-hamburger {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 400px;
+    }
+    #name {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .navbar-link {
+        display: none;
+    }
+    .toggle-button {
+        display: flex;
+        color: blue;
+    }
+    .logo-hamburger {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 200px;
+    }
+}
